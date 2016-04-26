@@ -1,3 +1,7 @@
+body {
+background : #455A64;
+}
+
 h1 {
   #height: 100px;
   width: 100%;
@@ -9,13 +13,41 @@ h1 {
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
+.disclaimer{
+  font-family:Roboto;
+  color:#FFFFFF;
+  font-size:14px;
+  background: #18aa8d;
+  border-radius: 2px;
+  display: block;
+
+  position: fixed;
+    top: 65%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+height: 50px;
+  width: 260px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.disclaimer:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
 form {
+  background : #FFFFFF;
   box-sizing: border-box;
   width: 260px;
   margin: 100px auto 0;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   padding-bottom: 40px;
   border-radius: 3px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+form:hover{
+ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 form h1 {
   box-sizing: border-box;
