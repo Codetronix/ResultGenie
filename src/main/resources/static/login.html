@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form id="loginForm">
-    <h1>Result Genie</h1>
-    <input id="username" placeholder="Username" type="text" required="">
-    <input id="password" placeholder="Password" type="password" required="">
-    <button>Login</button>
-</form>
 
-<div class="disclaimer"><p style="padding-left:50px; padding-top:15px;">© 2016 Resultgenie</p></div>
+<div id="main"></div>
+
+<div class="row">
+    <div class="col s4 offset-s8">
+        <form id="loginForm" class="loginForm">
+            <h1>Result Genie</h1>
+            <input class="loginForm_input" id="username" placeholder="Username" type="text" required="">
+            <input class="loginForm_input" id="password" placeholder="Password" type="password" required="">
+            <button class="login_btn">Login</button>
+        </form>
+        <div class="disclaimer"><p style="padding-left:50px; padding-top:15px;">© 2016 Resultgenie</p></div>
+    </div>
+</div>
+
+
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
 

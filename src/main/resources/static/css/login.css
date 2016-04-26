@@ -1,18 +1,16 @@
+html {
+  background: url(../img/cover.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-background : #455A64;
+#background : #455A64;
 font-family:Roboto;
 }
 
-h1 {
-  #height: 100px;
-  width: 100%;
-  font-size: 18px;
-  background: #18aa8d;
-  color: white;
-  line-height: 150%;
-  border-radius: 3px 3px 0 0;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
-}
 
 .disclaimer{
   margin-top: 65px;
@@ -33,7 +31,8 @@ h1 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-form {
+
+.loginForm {
   background : #FFFFFF;
   box-sizing: border-box;
   width: 260px;
@@ -44,36 +43,47 @@ form {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-form:hover{
+.loginForm:hover{
  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-form h1 {
-  box-sizing: border-box;
-  padding: 20px;
+
+
+.loginForm h1 {
+  box-sizing: border-box !important;
+  padding: 20px !important;
+  font-size:26px !important;
+  width: 100% !important;
+  background: #18aa8d !important;
+  color: white !important;
+  line-height: 150% !important;
+  border-radius: 3px 3px 0 0 !important;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2) !important;
 }
 
-input {
-  margin: 40px 25px;
-  width: 200px;
-  display: block;
-  border: none;
-  padding: 10px 0;
-  border-bottom: solid 1px #1abc9c;
-  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
-  background-position: -200px 0;
-  background-size: 200px 100%;
-  background-repeat: no-repeat;
-  color: #0e6252;
+.loginForm_input{
+  margin: 40px 25px !important;
+  width: 200px !important;
+  display: block !important;
+  border: none !important;
+  padding: 10px 0 !important;
+  border-bottom: solid 1px #1abc9c !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
+          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1abc9c 4%) !important;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%) !important;
+  background-position: -200px 0 !important;
+  background-size: 200px 100% !important;
+  background-repeat: no-repeat !important;
+  color: #0e6252 !important;
+
 }
-input:focus, input:valid {
+.loginForm_input:focus, .loginForm_input:valid {
   box-shadow: none;
   outline: none;
   background-position: 0 0;
 }
-input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+
+.loginForm_input:focus::-webkit-input-placeholder, .loginForm_input:valid::-webkit-input-placeholder {
   color: #1abc9c;
   font-size: 11px;
   -webkit-transform: translateY(-20px);
@@ -81,7 +91,7 @@ input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
   visibility: visible !important;
 }
 
-button {
+.login_btn{
   border: none;
   background: #1abc9c;
   cursor: pointer;
@@ -92,7 +102,7 @@ button {
   margin-left: 25px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
-button:hover {
+.login_btn:hover {
   -webkit-transform: translateY(-3px);
       -ms-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -101,7 +111,7 @@ button:hover {
 
 #The magic happens in a few lines of code for the input:focus and input:valid. The CSS transform property plays a crucial role to achieve this little instant feedback effect.
 
-input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+.loginForm input:focus::-webkit-input-placeholder, .loginForm input:valid::-webkit-input-placeholder {
   color: #1abc9c;
   font-size: 11px;
   -webkit-transform: translateY(-20px);
