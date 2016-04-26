@@ -2,7 +2,7 @@
  $('#loginForm').submit(function(){
             var url = "/rest/v1/user/login";
             var data = {};
-            data.name=$('#username').val();
+            data.username=$('#username').val();
             data.password=$('#password').val();
             $.ajax({
                    type: "POST",

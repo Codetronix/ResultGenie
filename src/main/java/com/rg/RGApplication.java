@@ -6,10 +6,10 @@ import org.springframework.boot.orm.jpa.EntityScan;
 
 @SpringBootApplication
 @EntityScan("com.rg.domain")
-public class Application {
+public class RGApplication {
 
 	public static void main( String[] args ) throws Exception
 	{
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(RGApplication.class, args);
 	}
 }
