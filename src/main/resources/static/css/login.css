@@ -26,6 +26,15 @@ body {
   height: 50px;
   width: 260px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   -webkit-transition: opacity 2s ease-in;
+      -moz-transition: opacity 2s ease-in;
+      -o-transition: opacity 2s ease-in;
+      -ms-transition: opacity 2s ease-in;
+      transition: opacity 2s ease-in;
+}
+
+.disclaimer.load{
+ opacity: 1;
 }
 
 .disclaimer:hover{

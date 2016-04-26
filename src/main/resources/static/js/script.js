@@ -1,4 +1,9 @@
  $(document).ready(function() {
+
+//  $( "#disclaimer" ).hide();
+//  $( "#disclaimer" ).show( "fast", function() {
+//     // Animation complete.
+//   });
  $('#loginForm').submit(function(){
             var url = "/rest/v1/user/login";
             var data = {};
