@@ -1,16 +1,17 @@
-html {
-  background: url(../img/cover.jpg) no-repeat center center fixed;
+html,body{
+  margin: 0;
+  height: 100%;
+  background: url(../img/cover.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family:Roboto;
 }
 
 body {
-#background : #455A64;
-font-family:Roboto;
+  background:rgba(0,0,0,0.5);
 }
-
 
 .disclaimer{
   margin-top: 65px;
@@ -50,6 +51,7 @@ font-family:Roboto;
 
 .loginForm h1 {
   box-sizing: border-box !important;
+  font-weight:bold !important;
   padding: 20px !important;
   font-size:26px !important;
   width: 100% !important;
