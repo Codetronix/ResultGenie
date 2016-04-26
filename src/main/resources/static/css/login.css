@@ -14,19 +14,17 @@ h1 {
 }
 
 .disclaimer{
+  margin-top: 65px;
   font-family:Roboto;
   color:#FFFFFF;
   font-size:14px;
   background: #18aa8d;
   border-radius: 2px;
   display: block;
-
-  position: fixed;
-    top: 65%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-height: 50px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
   width: 260px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
