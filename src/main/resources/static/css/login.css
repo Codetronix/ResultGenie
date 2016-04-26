@@ -1,5 +1,6 @@
 body {
 background : #455A64;
+font-family:Roboto;
 }
 
 h1 {
@@ -15,7 +16,6 @@ h1 {
 
 .disclaimer{
   margin-top: 65px;
-  font-family:Roboto;
   color:#FFFFFF;
   font-size:14px;
   background: #18aa8d;
