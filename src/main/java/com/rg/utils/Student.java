@@ -8,7 +8,8 @@ import java.util.List;
 public class Student {
 
     private String name;
-    private String semester;
+`    private String USN;
+    private int semester;
     private String resultClass;
     private List<Subject> subject;
 
@@ -20,11 +21,11 @@ public class Student {
         this.name = name;
     }
 
-    public String getSemester() {
+    public int getSemester() {
         return semester;
     }
 
-    public void setSemester(String semester) {
+    public void setSemester(int semester) {
         this.semester = semester;
     }
 
@@ -42,5 +43,13 @@ public class Student {
 
     public void setSubject(List<Subject> subject) {
         this.subject = subject;
+    }
+
+    public String getUSN() {
+        return USN;
+    }
+
+    public void setUSN(String USN) {
+        this.USN = USN;
     }
 }
