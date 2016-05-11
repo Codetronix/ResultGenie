@@ -9,6 +9,7 @@ public class Subject {
     private int internalMarks;
     private int externalMarks;
     private int totalMarks;
+    private String subjectCode;
     private boolean  result;
 
 
@@ -50,5 +51,13 @@ public class Subject {
 
     public void setResult(boolean result) {
         this.result = result;
+    }
+
+    public String getSubjectCode() {
+        return subjectCode;
+    }
+
+    public void setSubjectCode(String subjectCode) {
+        this.subjectCode = subjectCode;
     }
 }
