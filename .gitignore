@@ -14,4 +14,8 @@
 hs_err_pid*
 *.iml
 target/*
+<<<<<<< HEAD
 /target/
+=======
+.*
+>>>>>>> 57d9f0d21373899615077584e56db434b5d9ff1b
