@@ -8,7 +8,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -25,7 +24,6 @@ public class Branch {
 	private String branchValue;
 	
 	@OneToMany( cascade = CascadeType.ALL, fetch = FetchType.EAGER )
-	@JoinColumn( name = "subject_frn_branch_id" )
 	private List<Subject> subjects;
 	
 	public List<Subject> getSubjects()

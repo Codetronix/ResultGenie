@@ -15,21 +15,59 @@ import javax.persistence.Table;
 public class Student {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="s_student_id")
+	@GeneratedValue( strategy = GenerationType.IDENTITY )
+	@Column( name = "s_student_id" )
 	private Integer studentId;
 
-	@Column(name="s_student_usn")
+	@Column( name = "s_student_usn" )
 	private String studentUSN;
 
-	@Column(name="s_student_name")
+	@Column( name = "s_student_name" )
 	private String studentName;
-	
+
 	@ManyToOne
 	private College college;
-	
+
 	@ManyToMany
-	private List<Subject> subjects;
+	private List<Semester> semester;
+
+	/*
+	 * @ManyToMany
+	 * private List<Subject> subjects;
+	 */
+
+	@ManyToOne
+	private Branch branch;
+
+	public College getCollege()
+	{
+		return college;
+	}
+
+	public void setCollege( College college )
+	{
+		this.college = college;
+	}
+
+	public List<Semester> getSemester()
+	{
+		return semester;
+	}
+
+	public void setSemester( List<Semester> semester )
+	{
+		this.semester = semester;
+	}
+
+	public Branch getBranch()
+	{
+		return branch;
+	}
+
+	public void setBranch( Branch branch )
+	{
+		this.branch = branch;
+	}
 
 	public Integer getStudentId()
 	{

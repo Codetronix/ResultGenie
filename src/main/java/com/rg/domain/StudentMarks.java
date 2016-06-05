@@ -1,4 +1,4 @@
-package com.rg.domain;
+/*package com.rg.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -27,3 +27,4 @@ public class StudentMarks {
 	}
 
 }
+*/

@@ -3,7 +3,7 @@ package com.rg.utils;
 /**
  * Created by prathyush on 5/11/16.
  */
-public class Subject {
+public class SubjectBean {
 
     private String name;
     private int internalMarks;

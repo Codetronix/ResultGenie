@@ -31,6 +31,18 @@ public class Subject {
 	@JoinColumn( name = "tp_frn_subject_id" )
 	private List<TheoryPractical> thoeryPractical;
 
+	/*
+	 * @ManyToOne
+	 * private Branch branch;
+	 * public Branch getBranch()
+	 * {
+	 * return branch;
+	 * }
+	 * public void setBranch( Branch branch )
+	 * {
+	 * this.branch = branch;
+	 * }
+	 */
 	public List<TheoryPractical> getThoeryPractical()
 	{
 		return thoeryPractical;

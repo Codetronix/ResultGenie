@@ -30,6 +30,19 @@ public class UserRest {
 			throw e;
 		}
 	}
+	@RequestMapping( value = "/user/fetchResult", method = RequestMethod.GET )
+	public ResponseEntity<JSONObject> fetchResult() throws Exception
+	{
+		try
+		{
+			return uService.fetchResult();
+		}
+		catch( Exception e )
+		{
+			e.printStackTrace();
+			throw e;
+		}
+	}
 	
 	
 

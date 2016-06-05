@@ -5,13 +5,13 @@ import java.util.List;
 /**
  * Created by prathyush on 5/11/16.
  */
-public class Student {
+public class StudentBean {
 
     private String name;
     private String USN;
     private int semester;
     private String resultClass;
-    private List<Subject> subject;
+    private List<SubjectBean> subject;
 
     public String getName() {
         return name;
@@ -37,11 +37,11 @@ public class Student {
         this.resultClass = resultClass;
     }
 
-    public List<Subject> getSubject() {
+    public List<SubjectBean> getSubject() {
         return subject;
     }
 
-    public void setSubject(List<Subject> subject) {
+    public void setSubject(List<SubjectBean> subject) {
         this.subject = subject;
     }
 

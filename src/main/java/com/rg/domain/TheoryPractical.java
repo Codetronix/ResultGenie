@@ -1,15 +1,10 @@
 package com.rg.domain;
 
-import java.util.List;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -29,19 +24,20 @@ public class TheoryPractical {
 
 	@Column(name="tp_is_practical")
 	private Boolean isPractical;
-
-	@OneToMany( cascade = CascadeType.ALL, fetch = FetchType.EAGER )
-	@JoinColumn( name = "sm_frn_tp_id" )
-	private List<StudentMarks> studentMarks;
-
-	public List<StudentMarks> getStudentMarks()
+	
+	@Column(name="tp_result_class")
+	private Boolean resultClass;
+	
+	
+	public Boolean getResultClass()
 	{
-		return studentMarks;
+		return resultClass;
 	}
 
-	public void setStudentMarks( List<StudentMarks> studentMarks )
+	
+	public void setResultClass( Boolean resultClass )
 	{
-		this.studentMarks = studentMarks;
+		this.resultClass = resultClass;
 	}
 
 	public Integer getTheoryPracticalId()

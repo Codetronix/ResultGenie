@@ -10,9 +10,9 @@ import org.jsoup.Jsoup;
  */
 public class ParserUtils {
 
-    public Student parseResult(String result){
-        Student student = new Student();
-        List<Subject> subjects = new ArrayList<>();
+    public StudentBean parseResult(String result){
+        StudentBean student = new StudentBean();
+        List<SubjectBean> subjects = new ArrayList<>();
 
         //Clean the String
         result = Jsoup.parse(result).body().toString();
@@ -34,7 +34,10 @@ public class ParserUtils {
         student.setSemester(Integer.parseInt(strList[1]));
         student.setResultClass(strList[2].trim());
         for(int i=3; i<strList.length-4;){
-            Subject subject = new Subject();
+        	//Subject subject = new Subject();
+           SubjectBean subject = new SubjectBean();
+        	/*subject.setSubjectName(strList[i].replaceAll("\\(.*?\\)","").trim());
+        	subject.setThoeryPractical(thoeryPractical);*/
             subject.setName(strList[i].replaceAll("\\(.*?\\)","").trim());
             subject.setSubjectCode(getText(strList[i++]).trim());
             subject.setExternalMarks(Integer.parseInt(strList[i++]));

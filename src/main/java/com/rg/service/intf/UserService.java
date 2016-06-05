@@ -8,6 +8,8 @@ import com.rg.domain.User;
 public interface UserService {
 
 	public ResponseEntity<JSONObject> login( User user ) throws Exception;
+
+	public ResponseEntity<JSONObject> fetchResult();
 	
 	
 
